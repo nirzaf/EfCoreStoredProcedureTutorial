@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace EfCoreStoredProcedureTutorial;
 
-namespace EfCoreStoredProcedureTutorial
+public class Skill
 {
-    public partial class Skill
+    public Skill()
     {
-        public Skill()
-        {
-            Characters = new HashSet<Character>();
-        }
-
-        public int Id { get; set; }
-        public string Name { get; set; } = null!;
-        public int Damage { get; set; }
-
-        public virtual ICollection<Character> Characters { get; set; }
+        Characters = new HashSet<Character>();
     }
+
+    public int Id { get; set; }
+    public string Name { get; set; } = null!;
+    public int Damage { get; set; }
+
+    public virtual ICollection<Character> Characters { get; set; }
 }
