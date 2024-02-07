@@ -1,5 +1,3 @@
-using EfCoreStoredProcedureTutorial;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
